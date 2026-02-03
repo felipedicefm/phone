@@ -11,9 +11,12 @@ defmodule Phone.GB do
   # * Isle of Man: 1624 (landline), 7624, 7524, 7924, 7452 (mobile)
   #
   # Check gg.ex, je.ex, and im.ex for those specific regexes.
+  #
+  # Also, UK phone number may be written with a leading 0 after the country code,
+  # so we account for that with 0? after 44.
   def regex,
     do:
-      ~r/^(44)(?!1481|7781|7839|7911|1534|7509|7700|7797|7829|7937|1624|7624|7524|7924|7452)(\d{10})$/
+      ~r/^(44)0?(?!1481|7781|7839|7911|1534|7509|7700|7797|7829|7937|1624|7624|7524|7924|7452)()(\d{10})$/
 
   def country, do: "United Kingdom"
   def a2, do: "GB"
