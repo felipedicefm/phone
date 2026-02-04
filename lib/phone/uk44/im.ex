@@ -1,4 +1,4 @@
-defmodule Phone.IM do
+defmodule Phone.UK44.IM do
   @moduledoc false
 
   use Helper.Country
