@@ -204,6 +204,7 @@ defmodule Phone.Countries do
     Phone.VU,
     Phone.WF,
     Phone.WS,
+    Phone.XK,
     Phone.YE,
     Phone.ZA,
     Phone.ZM,

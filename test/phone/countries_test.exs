@@ -201,6 +201,7 @@ defmodule Phone.CountriesTest do
     Phone.VU,
     Phone.WF,
     Phone.WS,
+    Phone.XK,
     Phone.YE,
     Phone.ZA,
     Phone.ZM,
